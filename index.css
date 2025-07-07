@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url("./ladaakh\ img.webp");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.head{
+    height:50px;
+    width: 100%;
+    background-color: #bb0303;
+    padding: 3px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    align-items: center;
+    background: linear-gradient(to bottom, #201f1f, transparent);
+}
+.logo{
+    color: white;
+    background-color: transparent;
+    font-size: large;
+    font-weight: 800;
+    /* background-color: #0fd5cb; */
+    height: fit-content;
+    width:fit-content;
+}
+.logo span{
+    font-size:small;
+    font-weight:300;
+}
+.search-bar{
+    width:fit-content;
+    height: fit-content;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 15px;
+
+}
+/* for input and search icon on head */
+.search-bar input{
+    background-color:transparent;
+    height: 5%;
+    border-radius: 15px;
+}
+.search-bar input::placeholder{
+    color: white; 
+}
+
+.end-head{
+    height: fit-content;
+    width: fit-content;
+
+}
+.end-head a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+.left-icon{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    background-color: #ffffff00;
+    font-size: 1.5em;
+    border: 1.5px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    
+}
+.right-icon{
+    height: fit-content;
+    width: fit-content;
+    position:absolute;
+    top: 50%;
+    right: 6%;
+    background-color: #ffffff00;
+    font-size: 1.5em;
+    border: 1.5px solid black;
+    padding: 5px;
+    border-radius: 50%;
+}
+.right-icon:hover{
+    background-color: #ffffff00;   
+}
+.left-icon:hover{
+    background-color: #ffffff00;   
+}
+@media (max-width: 426px) {
+    .head{
+        font-size: 12px;
+    }
+    .logo{
+        font-size: 10px;
+    }
+    .logo span{
+        font-size: 8px;
+    }
+    .search-bar input::placeholder{
+        font-size: 10px;
+    }
+    .search-bar input{
+        width: fit-content;
+    }
+}
