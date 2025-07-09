@@ -6,8 +6,8 @@
 .main-section{
     height: 100vh;
     width: 100vw;
-    display: flex;
-    background-image: url("./ladaakh\ img.webp");
+    /* display: flex; */
+    background-image: url(./ladaakh-img.webp);
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -69,11 +69,10 @@
     position: absolute;
     top: 50%;
     left: 6%;
-    background-color: #ffffff00;
     font-size: 1.5em;
-    border: 1.5px solid black;
+    border: 1.5px solid white;
     padding: 5px;
-    border-radius: 50%;
+    border-radius: 20%;
     
 }
 .right-icon{
@@ -82,21 +81,29 @@
     position:absolute;
     top: 50%;
     right: 6%;
-    background-color: #ffffff00;
     font-size: 1.5em;
-    border: 1.5px solid black;
+    border: 1.5px solid white;
     padding: 5px;
-    border-radius: 50%;
+    border-radius: 20%;
 }
-.right-icon:hover{
+.right-icon a i:hover{
     background-color: #ffffff00;   
 }
 .left-icon:hover{
     background-color: #ffffff00;   
 }
+.left-icon a{
+   text-decoration: none;
+   color: white;
+}
+.right-icon a i{
+   text-decoration: none;
+   color: white;
+}
 @media (max-width: 426px) {
     .head{
         font-size: 12px;
+        align-items: center;
     }
     .logo{
         font-size: 10px;
@@ -110,4 +117,50 @@
     .search-bar input{
         width: fit-content;
     }
+}
+.text-message{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    bottom: 17%;
+    left:30%;
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.text-message1{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    bottom: 16.9%;
+    left:30%;
+    color: white;
+    font-weight: 100;
+    font-size: 1.4rem;
+}
+.line {
+  position: absolute;
+  bottom: 16.3%;
+  left: 0;
+  width: 100%;
+  border: none;
+  border-top: 1.5px solid white;
+}
+.price{
+   position: absolute;
+  bottom: 12.5%;
+  left: 45%;
+  width:fit-content;
+  color: white;
+  font-size: 1.3rem;
+}   
+#connect-expert{
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    background-color: rgb(255, 89, 0);
+    padding: 12px;
+    border-radius: 25px;
+    color: white;
+    font-size: 1.1rem;
 }
