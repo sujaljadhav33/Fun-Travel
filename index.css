@@ -48,6 +48,8 @@
     background-color:transparent;
     height: 5%;
     border-radius: 15px;
+    padding: 2px;
+    color: white;
 }
 .search-bar input::placeholder{
     color: white; 
