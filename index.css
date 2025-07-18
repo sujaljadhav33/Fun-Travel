@@ -39,7 +39,8 @@
     }
 }
 
-.head button {
+.head a {
+    text-decoration: none;
     padding: 5px;
     background-color: transparent;
     color: white;
@@ -70,8 +71,6 @@
     .head div h3 {
         font-size: small;
     }
-
-    .head button,
     .head select {
         width: fit-content;
         padding: 2px;
@@ -111,7 +110,8 @@
     }
 }
 
-.bottom-content button {
+.bottom-content a {
+    text-decoration: none;
     padding: 10px;
     background-color: rgb(255, 98, 0);
     color: white;
