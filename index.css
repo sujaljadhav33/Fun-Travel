@@ -1,113 +1,134 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-.head-container{
+
+.head-container {
     height: 100vh;
     width: 100%;
     background-image: url(./ladaakh-img.webp);
-    background-size:100% 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-.head{
+
+.head {
     height: 9vh;
     width: 100%;
-    background-image: linear-gradient(rgb(56, 55, 55) 10% ,transparent 90%);
+    background-image: linear-gradient(rgb(56, 55, 55) 10%, transparent 90%);
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
 }
-.head div{
+
+.head div {
     color: white;
     flex-wrap: nowrap;
 }
-.head input{
+
+.head input {
     color: white;
     padding: 5px;
     border-radius: 15px;
-    background-color:transparent;
+    background-color: transparent;
     border: 1px solid white;
-    &::placeholder{
+
+    &::placeholder {
         color: white;
     }
 }
-.head button{
+
+.head button {
     padding: 5px;
     background-color: transparent;
     color: white;
     border: 1px solid white;
     cursor: pointer;
 }
-.head select{
+
+.head select {
     padding: 5px;
     background-color: transparent;
     color: white;
     border: 1px solid white;
 }
-.head-options{
+
+.head-options {
     display: flex;
     flex-wrap: nowrap;
 }
+
 /* media query for head  */
-@media screen and (max-width: 426px){
-    .head-container{
+@media screen and (max-width: 426px) {
+    .head-container {
         background-image: url(./ladaakh-img.webp);
         background-size: cover;
         background-repeat: no-repeat;
     }
-    .head div h3{
+
+    .head div h3 {
         font-size: small;
     }
-    .head button, .head select{
+
+    .head button,
+    .head select {
         width: fit-content;
         padding: 2px;
         font-size: small;
     }
-    .head select{
+
+    .head select {
         padding: 2px;
         font-size: small;
     }
-    .head input{
-       display: none;
+
+    .head input {
+        display: none;
     }
-    .bottom-content{
+
+    .bottom-content {
         font-size: small;
     }
 }
-.bottom-content{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   color: white;
-   text-align: center;
-   height: fit-content;
-   width: 100%;
-   margin-top: 60vh;
-   gap: 10px;
+
+.bottom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    margin-top: 60vh;
+    gap: 10px;
 }
-.bottom-content h2{
-    &:hover{
-       color: rgb(1, 63, 8);
-   }
+
+.bottom-content h2 {
+    &:hover {
+        color: rgb(1, 63, 8);
+    }
 }
-.bottom-content button{
+
+.bottom-content button {
     padding: 10px;
     background-color: rgb(255, 98, 0);
     color: white;
     border: 1px solid white;
     cursor: pointer;
     border-radius: 25px;
-    &:hover{
-       transform: scale(1.1);
+
+    &:hover {
+        transform: scale(1.1);
     }
-    &:active{
-       background-color: #050e4c;
+
+    &:active {
+        background-color: #050e4c;
     }
 }
-.below-image{
+
+.below-image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +137,8 @@
     width: 100%;
     gap: 10px;
 }
-.review{
+
+.review {
     color: white;
     font-size: 20px;
     height: 8vh;
@@ -127,7 +149,8 @@
     border-radius: 50%;
     background-color: #2e2c2c;
 }
-.review-2{
+
+.review-2 {
     color: white;
     font-size: 20px;
     height: 8vh;
@@ -138,95 +161,187 @@
     border-radius: 50%;
     background-color: #2e2c2c;
 }
-.review-t{
+
+.review-t {
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     gap: 10px;
 }
+
 /* for review section on mobile */
 
-@media screen and (max-width: 426px){
-    .review{
+@media screen and (max-width: 426px) {
+    .review {
         height: 4.5vh;
         width: 4vh;
         font-size: 15px;
     }
-    .review-2{
+
+    .review-2 {
         display: none;
     }
-    .mobilehide{
+
+    .mobilehide {
         display: none;
     }
-    .review-t{
+
+    .review-t {
         font-size: small;
         display: flex;
         align-items: center;
         justify-content: center;
         justify-content: space-evenly;
-        
+
     }
-    .below-image{
+    .below-image {
         height: 8vh;
         flex-direction: column;
     }
+    .text-above {
+        text-align: center;
+        margin: auto;
+    }
+
+    .text-above p span {
+        font-weight: bold;
+        color: rgb(255, 196, 0);
+        font-size:15px;
+    }
 }
 
-.trip-info{
-    height: 70vh;
+.about-trip {
     width: 85%;
     margin: auto;
     margin-top: 1vh;
+    height: fit-content;
 }
-.content{
-    font-weight:300 ;
-}
-.content span{
-    font-weight: 500;
-    color: yellow;
-    font-size: 20px;
-}
-.place-price-info{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: rgb(0, 0, 0);
-    padding: 10px 0;
-    /* overflow: hidden; */
-    height: 63.69vh;
-    flex-wrap: wrap;
-    gap: 5px;
+
+.about-trip legend {
     text-align: center;
-}
-.place-price-info div{
-    width: 300px;
-    min-width: 250px;
-    flex-wrap: wrap;
-    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 10px;
     background-color: #0750b6;
+    border-radius: 10px;
 }
-.place-1{
+
+.text-above {
+    text-align: center;
+    margin: auto;
+    height: fit-content;
+}
+
+.text-above span {
+    font-weight: bold;
+    color: rgb(255, 196, 0);
+    font-size: 25px;
+}
+.cards{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.card1{
+    height: 450px;
+    width: 310px;
+    border-radius: 15px;
     background-image: url(./trip-img.avif);
     background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: 15px;
+    min-height: 350px;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding: 9px;
 }
-.place-2{
+.card2{
+    height: 450px;
+    width: 310px;
+    border-radius: 15px;
     background-image: url(./trip-img2.avif);
     background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: 15px;
+    min-height: 350px;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding: 9px;
 }
-.place-3{
+.card3{
+    height: 450px;
+    width: 310px;
+    border-radius: 15px;
     background-image: url(./trip-img3.avif);
     background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: 15px;
+    min-height: 350px;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding: 9px;
 }
-.place-4{
+.card4{
+    height: 450px;
+    width: 310px;
+    border-radius: 15px;
     background-image: url(./trip-img4.avif);
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    min-height: 350px;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding: 9px;
+}
+.incard{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+}
+.incard p{
+    color: white;
+}
+.incard span{
+    text-decoration:line-through;
+    margin-left: 15px;
+}
+.incard div i{
+    font-size: 20px;
+    width: 20%;
+    background-color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+.incard div{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.incard div a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 70%;
+    height: 50px;
 }
