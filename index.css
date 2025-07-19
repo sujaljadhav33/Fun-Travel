@@ -209,6 +209,10 @@
         color: rgb(255, 196, 0);
         font-size:15px;
     }
+    .group-50-off{
+        object-fit: cover;
+        background-size: cover;
+    }
 }
 
 .about-trip {
@@ -370,6 +374,7 @@
     background-size: 100% 100%;
     min-height: fit-content;
     min-width: 200px;
+    border: 1px solid black;
 }
 .s-j{
     height: 200px;
@@ -403,7 +408,7 @@
     height: 70px;
     width: 100%;
     display: flex;
-    gap: 5px;
+    gap: 15px;
     justify-content: center;
 }
 .sj-pics div{
@@ -431,4 +436,165 @@
 .about-trip fieldset{
     flex-wrap: wrap;
     gap: 10px;
+    padding: 5px;
+    border: transparent;
 }
+.pro-pic2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(./yashraj.jpeg);
+    background-size: cover;
+}
+.group-50-off{
+    height: 180px;
+    width: 75%;
+    background-image: url(./group-50off.avif);
+    background-size: cover;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    flex-direction: column;
+}
+.g-5-off{
+    width: 315px;
+    height: 70%;
+    /* background-color: #300909; */
+    color: white;
+}
+.g-5-off span{
+    color: yellow;
+    font-size:larger;
+    font-weight: 800;
+}
+.group-50-off a{
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: rgb(241, 131, 5);
+    text-decoration: none;
+    width: 120px;
+}
+.best-d{
+    font-size: larger;
+    font-weight: 800;
+    margin-left: 15%;
+}
+.best-deal-content{
+    width: 100%;
+    height: fit-content;
+    /* background-color: #31052b; */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.best-deal-content-card1{
+    width: 300px;
+    min-width:300px;
+    height: fit-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card1-info p{
+    color: #5e5a5a;
+}
+.card1-info span{
+    color: #00aa36;
+}
+.card1-info div a{
+    text-decoration: none;
+    color: rgb(255, 113, 61);
+    width: 20%;
+}
+#icon{
+    padding: 8px;
+    background-color: #fff;
+    border: 2px solid orange;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+}
+.card1-info div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#call-re{
+    width: 80%;
+    padding: 8px;
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+#place{
+    color: black;
+    font-size: 16px;
+}
+.card1-img{
+    width: 300px;
+    min-width:300px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: #8d5656;
+    background-image: url(./best-d1.avif);
+    background-size: 100% 100%;
+}
+#discount{
+    font-size: 11px;
+    text-decoration: line-through;
+}
+#price{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+.card2-img{
+    width: 300px;
+    min-width:300px;
+    height: 280px;
+    border-radius: 10px;
+    background-image: url(./best-d2.avif);
+    background-size: 100% 100%;
+}
+.card3-img{
+    width: 300px;
+    min-width:300px;
+    height: 280px;
+    border-radius: 10px;
+    background-image: url(./best-d4.avif);
+    background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+/* .best-deal-content-card2{
+    width: 300px;
+    min-width:300px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: #8d5656;
+    background-image: url(./best-d2.avif);
+    background-size: 100% 100%;
+}
+.card3-img{
+    width: 300px;
+    min-width:300px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: #8d5656;
+    background-image: url(./best-d3.avif);
+    background-size: 100% 100%;
+} */
