@@ -606,3 +606,17 @@
     background-image: url(./best-d4.avif);
     background-size: 100% 100%;
 }
+footer{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.foot{
+    height: fit-content;
+    width: 33%;
+    margin: auto;
+    text-align: center;
+    min-width: 300px;
+}
