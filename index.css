@@ -216,6 +216,7 @@
     margin: auto;
     margin-top: 1vh;
     height: fit-content;
+    flex-wrap: wrap;
 }
 
 .about-trip legend {
@@ -223,8 +224,21 @@
     width: 100%;
     display: block;
     padding: 10px;
-    background-color: #0750b6;
+    border: transparent;
+    border-top: 1px solid orangered;
     border-radius: 10px;
+    font-size: large;
+}
+.about-trip legend span{
+    color: orangered;
+    font-size:larger;
+}
+.about-trip fieldset{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-above {
@@ -344,4 +358,77 @@
     display: inline-block;
     width: 70%;
     height: 50px;
+}
+.star{
+    height: 200px;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./Screenshot\ 2025-07-19\ 121632.png);
+    background-size: 100% 100%;
+    min-height: fit-content;
+    min-width: 200px;
+}
+.s-j{
+    height: 200px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px solid rgb(59, 59, 59);
+    gap: 10px;
+    min-width: 300px;
+}
+.name-stars{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    gap: 20px;
+    color: green;
+}
+.pro-pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(./WhatsApp\ Image\ 2025-03-08\ at\ 5.22.31\ PM\ \(2\).jpeg);
+    background-size: cover;
+}
+.sj-pics{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.sj-pics div{
+    height: 70px;
+    width: 70px;   
+    background-color: #13039c;
+    border-radius: 15px;
+}
+#d1{
+    background-image: url(./sj-img1.avif);
+    background-size: cover;
+}
+#d2{
+    background-image: url(./sj-img2.avif);
+    background-size: cover;
+}
+#d3{
+    background-image: url(./sj-img3.avif);
+    background-size: cover;
+}
+#d4{
+    background-image: url(./sj-img4.avif);
+    background-size: cover;
+}
+.about-trip fieldset{
+    flex-wrap: wrap;
+    gap: 10px;
 }
