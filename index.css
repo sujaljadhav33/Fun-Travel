@@ -89,6 +89,11 @@
     .bottom-content {
         font-size: small;
     }
+    .incard div a{
+        font-size: small;
+        padding: 10px 15px;
+        font-weight: 700;
+    }
 }
 
 .bottom-content {
@@ -212,6 +217,14 @@
     .group-50-off{
         object-fit: cover;
         background-size: cover;
+    }
+    .best-deal-content-card2{
+        justify-content: center;
+        align-items: center;
+    }
+    .best-deal-content-card3{
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -449,6 +462,7 @@
 .group-50-off{
     height: 180px;
     width: 75%;
+    min-width: 320px;
     background-image: url(./group-50off.avif);
     background-size: cover;
     border-radius: 20px;
@@ -475,7 +489,8 @@
     background-color: #fff;
     color: rgb(241, 131, 5);
     text-decoration: none;
-    width: 120px;
+    width: 150px;
+    text-align: center;
 }
 .best-d{
     font-size: larger;
@@ -591,28 +606,3 @@
     background-image: url(./best-d4.avif);
     background-size: 100% 100%;
 }
-
-
-
-
-
-
-
-/* .best-deal-content-card2{
-    width: 300px;
-    min-width:300px;
-    height: 280px;
-    border-radius: 10px;
-    background-color: #8d5656;
-    background-image: url(./best-d2.avif);
-    background-size: 100% 100%;
-}
-.card3-img{
-    width: 300px;
-    min-width:300px;
-    height: 280px;
-    border-radius: 10px;
-    background-color: #8d5656;
-    background-image: url(./best-d3.avif);
-    background-size: 100% 100%;
-} */
